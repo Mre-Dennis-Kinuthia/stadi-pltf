@@ -1,14 +1,37 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  text-align: center;
 }
 
-.nav {
-  
+.nav{
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: none;
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+.nav h4{
+ margin-top: 1em;
+}
+.hero{
+  font-size: 60px;
+  width: 65%;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 3.5rem;
+}
+.subhero {
+  font-size: 25px;
+  font-weight: thin;
+  width: 65%;
+  color: darkgrey;
+
 }
 
 
@@ -45,6 +68,7 @@
 }
 
 .grid {
+  margin-top: 10em;
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
@@ -53,10 +77,13 @@
 
 .card {
   padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
+  border-radius: 2.5px;
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  height: 7.5em;
+  width: 25em;
+  font-size: 9px;
 }
 
 .card span {
