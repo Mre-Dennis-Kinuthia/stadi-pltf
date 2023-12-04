@@ -9,9 +9,11 @@ export default function Home() {
     <main className={styles.main}>
       <nav className={styles.nav}>
         <h4>STADI</h4>
-        <Link href="/authpage">
-          <button className="styles.navcat">Explore Now</button>
-        </Link>
+        <div className={styles.navcat}>
+          <Link href="/authpage">
+            Explore Now
+          </Link>
+        </div>
       </nav>
       <h1 className={styles.hero}>Empowering Agriculture with Ai Precision</h1>
       <h3 className={styles.subhero}>Revolutionize Your Farming Experience with Smart Solutions for Crop Health, Pest Identification, and Expert Consultations.</h3>

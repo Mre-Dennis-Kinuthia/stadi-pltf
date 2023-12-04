@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import styles from 'app/styles/page.module.css'
 export default function authPage() {
     return (
     <main>
@@ -8,7 +8,7 @@ export default function authPage() {
                 authpage
             </title>
         </header>
-        <div>
+            <div className={styles.leftauthcard}>
             <form>
                 <input type="phone" name="" value=""></input>
                 <input type="submit" name="" value="Request Access"></input>
