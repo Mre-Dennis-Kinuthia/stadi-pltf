@@ -34,18 +34,31 @@
 }
 .navcat{
   height: 2em;
-  width: 10em;
-  background-color: #ff8a00;
+  width: 8em;
+  background: none;
   color: #fff;
   position: absolute;
-  right: -10em;
   right: 10em;
   top: .5em;
   border: none;
   border-radius: 1px;
-  outline: 1px solid #000;
+  outline: 1px solid rgba(var(--card-border-rgb), 0.15);
   text-align: center;
+  line-height: 2em;
+  color: darkslategray;
+  font-weight: bolder;
 }
+
+.leftauthcard{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 45%;
+  background-color: beige;
+}
+
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -95,6 +108,7 @@
   font-size: 9px;
   font-weight: normal;
   color: #231F20;
+  border: 1px solid #BCBEC0;
 }
 
 .card:hover{
